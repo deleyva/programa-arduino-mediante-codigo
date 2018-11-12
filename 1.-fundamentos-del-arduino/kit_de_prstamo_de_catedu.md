@@ -10,3 +10,5 @@ Este es el kit que prestamos para hacer este curso, con la placa de apoyo EDUBAS
 
 {% embed url="https://padlet.com/CATEDU/PROGRAMAS\_APPS" %}
 
+{% embed url="https://docs.google.com/presentation/d/1xaKZWi2yyJszVrpb8SP9yobjsDcz7evapwAYLEYlkO4/edit?usp=sharing" %}
+
