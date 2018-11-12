@@ -6,5 +6,7 @@ Este es el kit que prestamos para hacer este curso, con la placa de apoyo EDUBAS
 
 {% embed url="http://web.catedu.es/webcatedu/" %}
 
+{% embed url="https://slides.com/jesuslopezdeleyva/deck\#/" %}
 
+{% embed url="https://padlet.com/CATEDU/PROGRAMAS\_APPS" %}
 
