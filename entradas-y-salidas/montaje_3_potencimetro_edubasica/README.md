@@ -1,0 +1,39 @@
+# 3.1 M1: Potenciómetro
+
+Vamos a realizar un programa para comprobar que al variar el valor de una resistencia mediante un potenciómetro, también variará la cantidad de luz que emite un led. Como se puede ver en el siguiente vídeo, a medida que giramos el potenciómetro el led varía su luminosidad.
+
+{% embed url="https://www.youtube.com/watch?v=EAryWgTyt8Y&feature=youtu.be" %}
+
+## CON EDUBASICA
+
+Vamos a aprovechar el A0 que está conectado al potenciómetro y utilizaremos el D3 que está conectado al LED VERDE
+
+![Esquema del potenci&#xF3;metro y de los diodos en EDUB&#xC1;SICA](../../.gitbook/assets/m3img1.1.png)
+
+## SIN EDUBASICA
+
+Pues se necesita hacer el cableado correspondiente A0 con el potenciómetro y D3 a un led:
+
+![](../../.gitbook/assets/selection_013.png)
+
+## Continuamos ...
+
+El programa sería el siguiente
+
+```text
+//Declaramos una variable para almacenar el valor recibido en pin 0.
+int val = 0;
+
+void setup() {
+//El pin 3 corresponde al LED verde
+pinMode(3, OUTPUT);
+}
+
+void loop() {
+/*leemos el valor del pin O modificado por el potenciómetro que va desde 0 a 1023*/
+val = analogRead(0);
+/*Escribimos el valor obtenido en el LED verde que puede ser entre 0 y 255. Por eso dividimos val por 4 */
+analogWrite(3, val/4);
+}
+```
+
